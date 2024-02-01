@@ -16,6 +16,10 @@ resource staticWebApp 'Microsoft.Web/staticSites@2020-12-01' = {
     }
     appArtifactLocation: 'dist'
     customDomains: []
+    sku: {
+      tier: 'Free' // Specify the desired SKU tier (Free or Standard)
+      // Additional SKU parameters can be added if necessary
+    }
   }
 }
 
